@@ -1,1 +1,1 @@
-# Basic Algoithms and the Time Complexities 
+# Basic Algorithms and the Time Complexities 
