@@ -1,0 +1,42 @@
+The pseudocode for the above algorithm can be derived as −
+
+function partitionFunc(left, right, pivot)
+   leftPointer = left -1
+   rightPointer = right
+
+   while True do
+      while A[++leftPointer] < pivot do
+         //do-nothing            
+      end while
+		
+      while rightPointer > 0 && A[--rightPointer] > pivot do
+         //do-nothing         
+      end while
+		
+      if leftPointer >= rightPointer
+         break
+      else                
+         swap leftPointer,rightPointer
+      end if
+		
+   end while 
+	
+   swap leftPointer,right
+   return leftPointer
+	
+end function
+
+The pseudocode for quick sort algorithm −
+
+procedure quickSort(left, right)
+
+   if right-left <= 0
+      return
+   else     
+      pivot = A[right]
+      partition = partitionFunc(left, right, pivot)
+      quickSort(left,partition-1)
+      quickSort(partition+1,right)    
+   end if		
+   
+end procedure
