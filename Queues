@@ -1,0 +1,30 @@
+QUEUES
+=======
+Prerequsites:
+End = 0 To track the End element of the Queue.
+MAX = 5 Maximum number of elements (or whatever value you like as the
+number of elements in the Queue)
+Array Queue[MAX] Declares an array of 5 elements for the Queue.
+Adding a Value
+--------------------
+Procedure Insert(Value)
+If End is equal to MAX then 'No more space in Queue
+ Output an error message that the Queue is full
+Otherwise
+ Add 1 to End 'Go to next available element in Queue
+ Store data in Value into Queue at End position
+Endif
+End Procedure
+Displaying value from Queue
+----------------------------------
+Procedure Display
+If End is equal to Zero then 'No values to display
+ Output an error message that the Queue is empty
+Otherwise
+ Display value at position Queue[1] 'Always display first value (FIFO)
+ Start Loop from position 1 to End position 'Looping through all elements with values
+ Copy data from Next element to Current element 'Moving data is step on its left to fill the gap in the 1 position
+ Move to Next element
+ End Loop
+EndIf
+End Procedure
