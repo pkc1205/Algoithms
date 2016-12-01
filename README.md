@@ -2,3 +2,6 @@
 QUICK SORT
 MERGE SORT
 bubblesort
+queues
+binarytree
+linkedlist
