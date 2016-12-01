@@ -1,0 +1,28 @@
+Stacks
+======
+We need two variables. One for the maximum limit of the Stack (MAX) and the other for
+keeping track of the current element to be manipulated (Current). We also declare an array
+for the Stack.
+MAX = 5
+Current = 0
+Array Stack[MAX] 'This will declare an array with 5 elements.
+Inserting a Value onto the Stack (Push)
+-----------------------------------------
+Procedure Push (Value)
+If Current is equal to MAX then 'This means no more space for data. Stack is full.
+ Output an error that the Stack is full 'Display an error message that there is no more space on the Stack.
+Else
+ Add 1 to Current 'Go to the next available element in the Stack.
+ Put data in Value into current position 'Put (Push) the data sent in Value parameter in the new element.
+Endif
+End Procedure
+Displaying a value from the Stack (Pop)
+-----------------------------------------
+Procedure Pop
+if Current is equal to Zero then 'If there are no values in the Stack.
+ Output error that Stack is empty 'Nothing to output.
+Else
+ Output value from Stack at Current position 'Output (POP) a value in the Current element (LIFO).
+ Subtract 1 from Current
+Endif
+End Procedure
