@@ -1,0 +1,30 @@
+Linked List
+==========
+Declaring a Linked List
+-----------------------------
+Integer : Data
+Pointer: Next
+Declaring variables
+-----------------------
+Pointer : Start
+Start = NULL 'Nothing in the Linked List
+Creating a New Node with above structure.
+---------------------------------------------------
+Procedure Create(Value)
+If there is enough memory available then 'Only create a Node if memory is available
+ Create New Node in memory 'Creating a New Node for the Linked List
+ Point its Next pointer to NULL 'Making a termination point for the Node
+ If this is the first Node in the List then 'There must be a starting point for the Linked List
+ Point Start to the Node 'Point Start to New Node only if it is the very first one
+ Otherwise 'If other Nodes exist then find the last Node in the List
+ Go to memory location pointed by Start pointer 'Begin at the Start (first Node)
+ Start Loop and run until Next points to NULL 'Check each Node until Next pointer points to NULL
+ Go to the Node pointed by Next pointer 'Move from Node to Node
+ End Loop
+ Point Next of last Node to the newly created Node 'When last Node found, point its Next pointer to New Node
+ Put data in Value in new Node's Data 'Put the required data (Value) in New Node's Data variable
+ Endif
+Otherwise 'Out of memory. Can't create a New Node
+ Output error message that there is no more memory available
+EndIf
+End Procedure
