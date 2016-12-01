@@ -1,0 +1,23 @@
+Deleting a Node from the Linked List (assuming values in Data are unique)
+-----------------------------------------------------------------------------------------
+Procedure Delete(Value)
+Pointer : Found 'Pointer for finding required Node to Delete
+Found = NULL 'Assuming required Node not found
+If there are no Nodes in the List then
+ Output error message that can't delete a Node
+Otherwise
+ Go to memory location pointed by Start pointer 'Begin at the Start (first Node)
+ Start Loop and run until Next points to NULL 'Check each Node until Next pointer points to NULL
+ If value in Data of current Node is equal to Value then 'If we find our required Node
+ Found = current Node 'Mark the current Node with Found pointer
+ Exit Loop 'No need to finish the loop
+ Endif
+ Go to Node pointed by Next pointer of current Node
+ End Loop
+ If the required Node is the first Node in the List then
+ Point the Start pointer to NULL 'Node deleted
+ Otherwise
+ Point Next of previous Node to the Node pointed by Next of Found 'Node deleted (Previous.Next = Found.Next)
+ Endif
+Endif
+End Procedure
