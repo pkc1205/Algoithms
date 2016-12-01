@@ -1,0 +1,29 @@
+Traversals of Binary Tree
+---------------------------------
+Procedure InOrder(Current)
+If Left pointer of Current is not NULL then
+ Call InOrder with Left pointer of Current 'This is a recursive call from InOrder to itself
+Endif
+Output Data in Current Node
+If Right pointer of Current is not NULL then
+ Call InOrder with Right pointer of Current 'This is a recursive call from InOrder to itself
+Endif
+End Procedure
+Procedure PreOrder(Current)
+Output Data in Current Node
+If Left pointer of Current is not NULL then
+ Call InOrder with Left pointer of Current 'This is a recursive call from PreOrder to itself
+Endif
+If Right pointer of Current is not NULL then
+ Call InOrder with Right pointer of Current 'This is a recursive call from PreOrder to itself
+Endif
+End Procedure
+Procedure PostOrder(Current)
+If Left pointer of Current is not NULL then
+ Call InOrder with Left pointer of Current 'This is a recursive call from PostOrder to itself
+Endif
+If Right pointer of Current is not NULL then
+ Call InOrder with Right pointer of Current 'This is a recursive call from PostOrder to itself
+Endif
+Output Data in Current Node
+End Procedure
