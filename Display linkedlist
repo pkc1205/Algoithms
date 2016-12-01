@@ -1,0 +1,12 @@
+Displaying the entire Linked List
+------------------------------------------
+Procedure Display
+If Start points to NULL then 'List is empty
+ Output error message that the List is empty
+Otherwise
+ Start Loop at Start position and run until Next points to NULL
+ Output current Node's Data
+ Go to Node pointed by Next pointer of current Node
+ End Loop
+Endif
+End Procedure
