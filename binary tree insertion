@@ -1,0 +1,34 @@
+Binary Trees
+==========
+Structure of Binary Tree Node
+Integer : Data
+Pointer : Left
+Pointer : Right
+Pointer : Start
+Pointer : Current
+Start = NULL
+Current = NULL
+Insertion in a Binary Tree
+------------------------------
+Procedure Insertion(Value)
+Create a New Node
+Point its Left and Right pointers to NULL
+If Start is pointing to NULL then
+ Point Start to the New Node 'Tree was empty so insert at Start
+Otherwise
+ Current = Start 'Search for appropriate position
+ Start Loop at Current and run until Left and Right pointers are NULL
+ If data in Value is less than or equal to Data in Current Node then
+ Go to the left of the Current Node
+ Otherwise
+ Go to the right of the Current Node
+ Endif
+ If data in New Node is less than data in Current Node then
+ Point the Left pointer of Current Node to the New Node
+ Otherwise
+ Point the Right pointer of Current Node to the New Node
+ Endif
+ Insert data in Value in the New Node
+ End Loop
+Endif
+End Procedure
