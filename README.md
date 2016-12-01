@@ -3,5 +3,6 @@ QUICK SORT
 MERGE SORT
 bubblesort
 queues
-binarytree
+binarytree creation
 linkedlist
+binary tree traversal
